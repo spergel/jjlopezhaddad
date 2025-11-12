@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# Optional: if you add node_modules later
+node_modules/
+package-lock.json
+yarn.lock
+

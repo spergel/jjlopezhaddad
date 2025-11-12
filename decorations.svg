@@ -1,0 +1,48 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fleur de lis symbol -->
+    <symbol id="fleur-de-lis-symbol" viewBox="0 0 100 100">
+      <!-- Main vertical stem -->
+      <path d="M 50,5 L 50,35 L 45,35 L 45,40 L 40,40 L 40,45 L 45,45 L 45,50 L 50,50 L 50,95 L 55,95 L 55,50 L 60,50 L 60,45 L 65,45 L 65,40 L 60,40 L 60,35 L 55,35 L 55,5 Z" 
+            fill="#D4AF37" stroke="#1a237e" stroke-width="1"/>
+      <!-- Left petal -->
+      <path d="M 50,20 Q 30,15 20,25 Q 15,30 20,35 Q 25,40 30,35 Q 35,30 50,25 Z" 
+            fill="#D4AF37" stroke="#c62828" stroke-width="0.5" opacity="0.9"/>
+      <!-- Right petal -->
+      <path d="M 50,20 Q 70,15 80,25 Q 85,30 80,35 Q 75,40 70,35 Q 65,30 50,25 Z" 
+            fill="#D4AF37" stroke="#c62828" stroke-width="0.5" opacity="0.9"/>
+      <!-- Center decoration -->
+      <circle cx="50" cy="30" r="3" fill="#1a237e" opacity="0.7"/>
+    </symbol>
+    
+    <!-- Fleur de lis pattern for backgrounds -->
+    <pattern id="fleur-de-lis-pattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <use href="#fleur-de-lis-symbol" x="0" y="0" width="80" height="80" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Dense fleur de lis pattern -->
+    <pattern id="fleur-de-lis-dense" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <use href="#fleur-de-lis-symbol" x="0" y="0" width="60" height="60" opacity="0.2"/>
+    </pattern>
+    
+    <!-- Ornate border pattern -->
+    <pattern id="ornate-border" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="2" fill="#D4AF37" opacity="0.7"/>
+      <path d="M 20,10 Q 25,15 20,20 Q 15,15 20,10" fill="#c62828" opacity="0.4"/>
+      <path d="M 20,20 Q 25,25 20,30 Q 15,25 20,20" fill="#1b5e20" opacity="0.4"/>
+    </pattern>
+    
+    <!-- Acanthus scroll pattern -->
+    <pattern id="acanthus-scroll" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 40,10 Q 50,20 45,30 Q 40,40 35,35 Q 30,30 35,20 Q 40,10 40,10 Z" 
+            fill="#1a237e" opacity="0.5"/>
+      <path d="M 40,30 Q 45,40 40,50 Q 35,60 30,55 Q 25,50 30,40 Q 35,30 40,30 Z" 
+            fill="#1b5e20" opacity="0.5"/>
+      <circle cx="40" cy="40" r="3" fill="#D4AF37" opacity="0.8"/>
+    </pattern>
+  </defs>
+  
+  <!-- Make the symbol visible for reference -->
+  <use href="#fleur-de-lis-symbol" x="50" y="50" width="100" height="100"/>
+</svg>
+
