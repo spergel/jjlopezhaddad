@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 borderFrame.style.minHeight = calculatedHeight + 'px';
             }
             
-            // Size content area based on image dimensions: 65% width, 65% height
+            // Size content area based on image dimensions: 55% width, 55% height (reduced by 5% from bottom)
             // Positioned 10% from left and 10% down from top
             if (manuscriptInner) {
-                const contentWidth = viewportWidth * 0.55; // 65% of viewport width
-                const contentHeight = calculatedHeight * 0.60; // 65% of image height
+                const contentWidth = viewportWidth * 0.55; // 55% of viewport width
+                const contentHeight = calculatedHeight * 0.55; // 55% of image height (reduced from 60%)
                 
                 manuscriptInner.style.width = contentWidth + 'px';
                 manuscriptInner.style.maxWidth = 'none';
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Background image dimensions:', img.width, 'x', img.height);
             console.log('Aspect ratio:', aspectRatio);
             console.log('Calculated height:', calculatedHeight + 'px');
-            console.log('Content area:', (viewportWidth * 0.65) + 'px x ' + (calculatedHeight * 0.65) + 'px');
+            console.log('Content area:', (viewportWidth * 0.55) + 'px x ' + (calculatedHeight * 0.55) + 'px');
             console.log('Content position: 10% from left, 10% from top');
         };
         
